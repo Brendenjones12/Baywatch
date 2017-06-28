@@ -1,5 +1,6 @@
 const app = {
   init(selectors) {
+      this.flicks = []
     this.max = 0
     this.list = document.querySelector(selectors.listSelector)
 
@@ -14,11 +15,33 @@ const app = {
   renderListItem(flick) {
     const item = document.createElement('li')
     item.textContent = flick.name
+    item.style.backgroundColor = "lightgrey"
     const favButton = document.createElement('button')
+    const delButton = document.createElement('button')
+    //favButton.getAttribute('id', 'f$(flick.id)')
+    //favButton.getAttribute('id', 'f$(flick.id)')
     favButton.textContent = 'fav'
-    favButton.style.backgroundColor = 'cornflowerblue'
-    favButton.style.left = '40px'
+    delButton.textContent = 'delete'
+    favButton.style.backgroundColor = 'red'
+    delButton.style.backgroundColor = 'yellow'
+    favButton.style.position = 'absolute'
+    delButton.style.position = 'absolute'
+    favButton.style.right = '230px'
+    delButton.style.right = '290px'
+    favButton.style.height = '25px'
+    favButton.style.width = '60px'
+    delButton.style.height = '25px'
+    delButton.style.width = '60px'
+    favButton.addEventListener('click', ()=>{
+        if(item.style.backgroundColor == 'lightgrey') {
+            item.style.backgroundColor = 'gold'}
+            else{item.style.backgroundColor = 'lightgrey'}})
+        
+    
+    
+    delButton.addEventListener('click', ()=>{item.parentNode.removeChild(item)})
     item.appendChild(favButton)
+    item.appendChild(delButton)
     return item
   },
 
@@ -35,7 +58,13 @@ const app = {
     this.flicks[flick.id - 1] = flick.Name
     this.max ++
   },
+
+  faved(){
+ 
+  }
 }
+
+
 
 app.init({
   formSelector: 'form#flick-form',
