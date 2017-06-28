@@ -14,6 +14,11 @@ const app = {
   renderListItem(flick) {
     const item = document.createElement('li')
     item.textContent = flick.name
+    const favButton = document.createElement('button')
+    favButton.textContent = 'fav'
+    favButton.style.backgroundColor = 'cornflowerblue'
+    favButton.style.left = '40px'
+    item.appendChild(favButton)
     return item
   },
 
@@ -27,7 +32,7 @@ const app = {
 
     const listItem = this.renderListItem(flick)
     this.list.appendChild(listItem)
-    
+    this.flicks[flick.id - 1] = flick.Name
     this.max ++
   },
 }
