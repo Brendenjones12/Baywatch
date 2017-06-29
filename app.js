@@ -24,6 +24,8 @@ const app = {
     delButton.textContent = 'delete'
     favButton.style.backgroundColor = 'red'
     delButton.style.backgroundColor = 'yellow'
+    delButton.style.color = "black"
+    favButton.style.color = "black"
     favButton.style.position = 'absolute'
     delButton.style.position = 'absolute'
     favButton.style.right = '230px'
@@ -54,7 +56,7 @@ const app = {
     }
 
     const listItem = this.renderListItem(flick)
-    this.list.appendChild(listItem)
+    this.list.insertBefore(listItem, this.list.firstElementChild)
     this.flicks[flick.id - 1] = flick.Name
     this.max ++
   },

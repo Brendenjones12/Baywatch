@@ -1,7 +1,46 @@
 body{
+    background:blue;
     margin-left: auto;
     margin-right: auto;
+    
+}
+
+h1{
+    
+    float:right;
+  margin-top: 0.75rem;
+  font-family: 'Bungee', cursive;
+  text-shadow: 0 0 10px#fff,
+               0 0 20px #fff,
+               0 0 30px #fff,
+               0 0 100px lightblue,
+               0 0 150px lightblue;
+}
+
+.banner {
+  position: absolute;
+}
+.banner img {
+  height: 100px;
+}
+html {
+  background: blue; 
+  background-size: cover;
 }
 
 
+    input[type=text] {
+    border: 3px solid red;
+    background-color:whitesmoke;
+    color: Red;
+    
+}
 
+    button {
+    width:100px;
+    color: white;
+    background-color:red;
+}
+li{
+    border: .5px solid black;
+}

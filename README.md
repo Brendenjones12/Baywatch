@@ -23,3 +23,11 @@ A catalog of Micheal Bay's extensive filmography
 
 ##SUPER MAGE BONUS CREDIT HYPER FIGHTING
     *add buttons to move a flick up and down the list
+
+
+
+##DAY 4 HOMEWORK
+    *finsish the move up and move down buttons
+
+###BONUS CREDIT
+*allow users to edit existing names, without removing or adding
