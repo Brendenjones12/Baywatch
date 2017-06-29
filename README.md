@@ -30,4 +30,10 @@ A catalog of Micheal Bay's extensive filmography
     *finsish the move up and move down buttons
 
 ###BONUS CREDIT
-*allow users to edit existing names, without removing or adding
+*allow users to edit existing names of flicks. Wouldnt it be nice if we would make that spans **content editible"
+
+###Super Mege Bonus Credit
+*use local storage. When you refresh the page, your flicks should still be there
+
+###Super Mega Bonus Credit Hyper Fighting
+*allow the users to filter the list of flicks
