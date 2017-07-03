@@ -38,8 +38,6 @@ const app = {
   upFlick(flick, ev){
     const listItem  = ev.target.closest('.flick')
     this.list.insertBefore(listItem, listItem.previousSibling)
-
-
   },
   
 
@@ -48,8 +46,6 @@ const app = {
   downFlick(flick, ev){
     const listItem  = ev.target.closest('.flick')
 this.list.insertBefore(listItem, listItem.nextSibling.nextSibling)
-
-
   },
 
 
