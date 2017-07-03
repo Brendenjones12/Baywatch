@@ -17,18 +17,11 @@
         <form id="flick-form">
           <div class="input-group">
             <input
+            id="flick-Box"
               type="text"
               class="input-group-field"
               name="flickName"
               placeholder="Name a flick"
-              autofocus
-              required
-            >
-            <input
-              type="text"
-              class="input-group-field"
-              name="searchName"
-              placeholder="Search a flick"
               autofocus
               required
             >
@@ -37,8 +30,22 @@
                 class="success button"
                 type="submit"
               >
-                Add flick
+                Add a flick
               </button>
+            </div>
+          </div>
+        </form>
+        <form id = "filter-form">
+          <div class = "filter input-group">
+            <input
+            id="search-Box"
+              type = "text"
+              class = "input-group-field"
+              name = "filterText"
+              placeholder = "Filter your Flicks"
+            >
+            <div class = "input-group-button" id = "filterBtn">
+              <button type = "submit button" class= "success button">Search a flick</button>
             </div>
           </div>
         </form>
